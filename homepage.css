@@ -1,0 +1,336 @@
+/*Reset CSS starts*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+main, article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img,
+object,
+embed {max-width: 100%;}
+
+html {overflow-y: scroll;}
+
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+button, input, select, textarea {margin: 0;}
+
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+.clearfix:after { content: " "; display: block; clear: both; }
+
+/*Reset CSS Ends*/
+html, body{
+  font-family: "Graphik-Regular-Web";
+  font-size: 16px;
+}
+#dynamic-datawrap{
+  padding:3%;
+}
+img{
+  height:100%;
+  width:100%;
+}
+
+.item{
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 32%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.item-card-title{  
+  font-size:15px;
+  cursor:pointer;
+  height: 20px;
+  background-color: #fff;
+  position: relative;
+  bottom: 14px;
+  padding: 12px 0 0 0;
+  width: 35%;
+  margin: 0;
+}
+.item {
+  width: 30%;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.custom-nav{
+  display: inline-block;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  font-weight: 700;
+  color:#000;
+  background-color: #fff;
+}
+.custom-nav li a{
+  font-weight: normal;
+  color:#000;
+  font-size: 18px;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  display: inline-block;
+  margin: 0;
+  font-size: 11px;
+  color: #808080;
+}
+.card-righttext{
+  display: block;
+  float: right;
+}
+.fa-shopping-cart{
+  float: right;
+  position: relative;
+  top: 55px;
+  display: block;
+  padding: 0;
+  margin-right: 0px;
+  left: 7%;
+}
+.fa-star,.fa-star-o{
+  margin-top:2%;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ddd;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  margin-top: 4%;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sidebar a:hover {
+  color: #818181;
+}
+.dropdown-menu.show{
+  background: #e8e8e8;
+}
+.sidebar .close-sidebar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.filter-options{
+  padding:2px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.open-sidebar {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  vertical-align: top;
+}
+
+.open-sidebar:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#dropdownMenuButton{
+  background: #ddd;
+  padding: 8px 45px 8px 20px;
+  font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+}
+#dropdownMenuButton:hover {
+  color: #818181;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#pagination {
+  clear: both;
+  padding:0;  
+  width: 350px;
+  margin: 0px 100px;
+  height: 60px;
+}
+#pagination li {
+  float:left;
+  margin-right:30px;
+  display: block;
+}
+#pagination li a {
+  display:block;
+  color:#717171;
+  font:bold 11px;
+  text-shadow:0px 1px white;
+  padding:5px 8px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  -webkit-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+  box-shadow:0px 1px 3px 0px rgba(0,0,0,0.35);
+  background:#f9f9f9;
+}
+#pagination li a.current {
+  color:white;
+  text-shadow:0px 1px #3f789f;
+  -webkit-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+  box-shadow:0px 1px 2px 0px rgba(0,0,0,0.8);
+  background:#7cb9e5;
+}
+
+.range-holder label{
+  padding-left: 20px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 14px;
+    font-weight: 700;
+}
+#price-range {
+  height: 4px;
+  margin: 10px 16px;
+  cursor: pointer;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+ border-radius: 50%;
+ outline: none;
+ cursor: pointer;
+}
+#amount{
+  background-color: #ddd;
+  border: none;
+  padding-left: 20px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+.item-card-title{
+font-size: 10px;
+}
+}
